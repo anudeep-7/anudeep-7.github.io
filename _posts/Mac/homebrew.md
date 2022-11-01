@@ -1,0 +1,103 @@
+---
+title: Homebrew
+author: Anudeep Kakkireni
+date: 2022-11-01 17:47:00 +0530
+categories: [Mac Terminal,homebrew]
+description: In this you'll be learning how to use homebrew package manager.
+tags: [commands,Mac,homebrew,brew]
+---
+## What is Homebrew ?
+Homebrew is package manager for Macs helps you install lots of different softwares like Git, Ruby, and Node simpler. A package manager is a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs for a computer in a consistent manner.
+
+## How to install Homebrew ?
+To install homebrew
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+To understand more about homebrew refer: https://brew.sh/
+
+Install packages  (Example)
+In your case you need to enter with required package name in place of tree.
+
+To install tree package ( Shows directory as tree structure)
+```
+brew install tree
+```
+
+Working of tree command:
+```
+tree project-name
+```
+
+The tree looks like as in the above screenshot.
+
+To check the path of the tree where it installed:
+```
+which tree
+```
+
+
+This provides symbolic link. (It is a file system object that points to other system object)
+
+To see more information about installed package:
+```
+brew info tree
+```
+
+To uninstall package:
+```
+brew uninstall tree
+```
+## Updating package and some more useful commands:
+To view outdate packages:
+```
+brew outdated
+```
+
+To update all packages into latest version:
+```
+brew update
+```
+
+To update the actual packages to match the versions as with updated versions:
+```
+brew upgrade
+```
+
+To understand clear difference between update and upgrade:
+https://itssiva.medium.com/difference-between-update-and-upgrade-on-brew-apt-get-etc-8a227fcbbd45
+
+To remove all the older versions of the packages:
+```
+brew cleanup
+```
+
+To diagnose your system and know the issues:
+```
+brew doctor
+```
+## Install Mac applications using brew commands:
+brew install app-name --cask
+
+## Searching for Packages:
+To search applications:
+```
+brew search app-name
+```
+And to confirm whether the searched application is your required one:
+```
+brew home app-name --cask
+```
+Then, the application home page will be opened in your default website
+
+##Tap a repository:
+To install a package that is not available in core homebrew but located in different repository and to add those repositories:
+```
+brew tap rep-name
+```
+And now search the repository using above search command and install your required application.
+
+## How to uninstall homebrew ?
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+```
