@@ -1,7 +1,7 @@
 ---
 title: Indexing in MongoDB
 author: Anudeep Kakkireni
-date: 2022-11-09 17:47:00 +0530
+date: 2022-11-08 17:47:00 +0530
 categories: [Indexing,MongoDB]
 description: In this you'll be learning what is indexing and how it works.
 tags: [indexing,commands,mongodb,mongo]
