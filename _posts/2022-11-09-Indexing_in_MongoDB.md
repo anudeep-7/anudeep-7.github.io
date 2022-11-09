@@ -8,9 +8,9 @@ tags: [indexing,commands,mongodb,mongo]
 ---
 ## Overview
 MongoDB uses indexing in order to make the query processing more efficient. Without index whole collection must be scanned (COLLSCAN). Indexes are special data structures that stores some information related to the documents such that it becomes easy for MongoDB to find the right data file. Index stores sorted field values. 
-  - If appropriate index exists, MongoDB performs only index scan (IXSCAN).
-  - Indexes are stored as B-Tree structure.
-  - Indexes are stored in along with the collection data in the data directory of the MongoDB.
+- If appropriate index exists, MongoDB performs only index scan (IXSCAN).
+- Indexes are stored as B-Tree structure.
+- Indexes are stored in along with the collection data in the data directory of the MongoDB.
 ## Index Creation Process
 ![Desktop View](/assets/img/post_images/Index_creation_process.jpg)
 ## Default _id index
