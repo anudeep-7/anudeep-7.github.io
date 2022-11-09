@@ -45,7 +45,7 @@ db.persons.createIndex( { age: 1 } )
 ```
 
 ## Get all indexes
-- Returns current indexes for certain collection
+Returns current indexes for certain collection
 ```
 db.‹collectionName›.getIndexes()
 ```
