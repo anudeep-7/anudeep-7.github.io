@@ -14,6 +14,7 @@ MongoDB uses indexing in order to make the query processing more efficient. With
 
 ## Index Creation Process
 For example, if you created an index for age field, then each index node contains field value and record pointer (points to corresponding document) that helps us to access document efficiently. Indexes and documents are mapped as shown in below figure:
+
 ![Desktop View](/assets/img/post_images/Index_creation_process.jpg)
 
 ## Default _id index
