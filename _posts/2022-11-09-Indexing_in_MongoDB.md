@@ -19,7 +19,7 @@ For example, if you created an index for age field, then each index node contain
 
 ## Default _id index
 - {_id: 1 } is default index in each MongoDB collection.
-- Name of this index is id.
+- Name of this index is _id_.
 - Default id index is unique.
 
 ## Creating an Index
